@@ -1,0 +1,32 @@
+:q!
+pwd
+clear
+cd <nama folder>
+cd ..
+git init
+git config --list
+git add . // add changes to staging area from working area
+git reset . // remove changes from staging area and move to working area
+git checkout -- . // remove changes from working area
+git commit -m "message"
+git commit -m "message" --amend
+git status
+git log
+git log --all --decorate --oneline --graph
+git branch
+git branch <new branch>
+git branch -d <nama branch>
+git branch --merged
+git checkout <nama branch>
+git merge <branch>
+git clone <https>
+git remote
+git remote -v
+git remote add <nama remote> <https>
+git fetch <nama remote>
+git push -u origin master
+git push <nama remote> <nama branch>
+git push
+git fetch
+git pull 
+git rebase <branch>
