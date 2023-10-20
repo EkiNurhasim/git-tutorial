@@ -4,12 +4,12 @@ clear
 cd <nama folder>
 cd ..
 git init
-git config --list
+git config --list // list of configuration
 git add . // add changes to staging area from working area
 git reset . // remove changes from staging area and move to working area
 git checkout -- . // remove changes from working area
-git commit -m "message"
-git commit -m "message" --amend
+git commit -m "message" // commit to the new version
+git commit -m "message" --amend // commit to the same version
 git status
 git log
 git log --all --decorate --oneline --graph
