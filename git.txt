@@ -4,8 +4,7 @@ clear
 cd <nama folder>
 cd ..
 git init
-rm -rf
-git config --list
+ri -r -fo .git // remove git in window
 git add . // add changes to staging area from working area
 git reset . // remove changes from staging area and move to working area
 git checkout -- . // remove changes from working area
@@ -14,6 +13,7 @@ git checkout <commit id> . // restoring previous version to current version
 git commit -m "message"
 git commit -m "message" --amend
 git status
+git config --list // list of configuration
 git config --global alias.graph "log --all --decorate --oneline --graph" // create an alias
 git log
 git log --all
