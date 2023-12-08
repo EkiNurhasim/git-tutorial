@@ -1,7 +1,7 @@
 :q!
 pwd
 clear
-cd <nama folder>
+cd <name folder>
 cd ..
 git init
 ri -r -fo .git // remove git in window
@@ -14,6 +14,10 @@ git commit -m "message"
 git commit -m "message" --amend
 git status
 git config --list // list of configuration
+git config --global user.name "<username>"
+git config --global user.email "<email>"
+git config --list
+git config --global credential.username "<git username>"
 git config --global alias.graph "log --all --decorate --oneline --graph" // create an alias
 git log
 git log --all
@@ -21,17 +25,19 @@ git log --all --graph
 git log --all --decorate --oneline --graph
 git branch
 git branch <new branch>
-git branch -d <nama branch>
+git branch -d <name branch>
 git branch --merged
-git checkout <nama branch>
+git checkout <name branch>
 git merge <branch>
 git clone <https>
 git remote
 git remote -v
-git remote add <nama remote> <https>
-git fetch <nama remote>
+git remote remove <name remote>
+git remote add <name remote> <https>
+git fetch <name remote>
+git push origin master --set-upstream
 git push -u origin master
-git push <nama remote> <nama branch>
+git push <name remote> <name branch>
 git push
 git fetch
 git pull 
